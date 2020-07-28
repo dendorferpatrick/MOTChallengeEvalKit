@@ -9,19 +9,18 @@ This devkit replaces the previous version that used to be accessible over https:
 
 
 ## Directories
-All evalution scripts assume the following directory structure: 
+All evaluation scripts assume the following directory structure: 
 
 ### ./res
-This directory contains the tracking results (for each sequence); result files should be placed to subfolders. We placed a few sample test results: ``MOT16res  MOT17Detres  MOTSres  ZeFres``
-
+This directory contains the tracking results (for each sequence); result files should be placed to subfolders
 ### ./seqmaps
 Sequence lists for all supported different benchmarks
  
 ### ./data
-This directory contains the ground truth data (for several different sequences / challenges)
+This directory contains the ground truth data (for several different sequences/challenges)
 
 ### ./vid 
-* tbd
+This directory is for the visualization of results or annotations
 
 
 ## Evaluation Scripts
