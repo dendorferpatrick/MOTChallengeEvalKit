@@ -102,7 +102,7 @@ All frame numbers, target IDs and bounding boxes are 1-based. Here is an example
 
  
 ## Evaluating on your own Data
-The repository also allows you to include your own datasets and evaluate your method on ```<YourChallenge>```.
+The repository also allows you to include your own datasets and evaluate your method on ```<YourChallenge>```.  
 ***1. Ground truth data preparation***
 Prepare your sequences in directory ```~/data/<YourChallenge>``` following this structure:
 
@@ -122,7 +122,7 @@ Prepare your sequences in directory ```~/data/<YourChallenge>``` following this 
 |—— <SeqName03>
 	|—— …...
 ```
-If you have different image sources for the same sequence or do not provide public detections you can adjust the structure accordingly.
+If you have different image sources for the same sequence or do not provide public detections you can adjust the structure accordingly.  
 ***2. Sequence file***
 Create text files ```<YourChallenge>-train.txt```, ```<YourChallenge>-test.txt```,  ```<YourChallenge>-test.txt``` inside ```~/seqmaps```, e.g.:
 ```<YourChallenge>-all.txt```
