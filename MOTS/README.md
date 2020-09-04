@@ -16,11 +16,11 @@ python MOTS/evalMOTS.py
 ## Evaluation
 To run the evaluation for your method please adjust the file ```MOTS/evalMOTS.py``` using the following arguments:
 
-```benchmark_name```: Name of the benchmark, e.g. MOT17  
-```gt_dir```: Directory containing ground truth files in ```gt/gt.txt```    
+```benchmark_name```: Name of the benchmark, e.g. MOTS  
+```gt_dir```: Directory containing ground truth files in ```<gt_dir>/<sequence>/gt/gt.txt```    
 ```res_dir```: The folder containing the tracking results. Each one should be saved in a separate .txt file with the name of the respective sequence (see ./res/data)    
-```save_pkl```: path to output directory for final results (pickle)  
-```seq_file```: File containing list of sequences of benchmark, e.g. 'c10-train.txt'
+```save_pkl```: path to output directory for final results (pickle)  (default: False)  
+```eval_mode```: Mode of evaluation out of ```["train", "test", "all"]``` (default : "train")
 
 ```
 eval.run(

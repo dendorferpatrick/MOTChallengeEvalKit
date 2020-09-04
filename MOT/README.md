@@ -25,18 +25,18 @@ python MOT/evalMOT.py
 To run the evaluation for your method please adjust the file ```MOT/evalMOT.py``` using the following arguments:
 
 ```benchmark_name```: Name of the benchmark, e.g. MOT17  
-```gt_dir```: Directory containing ground truth files in ```gt/gt.txt```    
+```gt_dir```: Directory containing ground truth files in ```<gt_dir>/<sequence>/gt/gt.txt```    
 ```res_dir```: The folder containing the tracking results. Each one should be saved in a separate .txt file with the name of the respective sequence (see ./res/data)    
-```save_pkl```: path to output directory for final results (pickle)  
-```seq_file```: File containing list of sequences of benchmark, e.g. 'MOT17-train.txt'
+```save_pkl```: path to output directory for final results (pickle)  (default: False)  
+```eval_mode```: Mode of evaluation out of ```["train", "test", "all"]``` (default : "train")
 
 ```
 eval.run(
     benchmark_name = benchmark_name,
-    seq_file = seq_file,
     gt_dir = gt_dir,
-    res_dir = res_dir
-        )
+    res_dir = res_dir,
+    eval_mode = eval_mode
+    )
 ```
 ## Visualization
 To visualize your results or the annotations run
@@ -100,7 +100,54 @@ All frame numbers, target IDs and bounding boxes are 1-based. Here is an example
 ...
 </pre>
 
-  
+ 
+## Evaluating on your own Data
+The repository also allows you to include your own datasets and evaluate your method on ```<YourChallenge>```.
+***1. Ground truth data preparation***
+Prepare your sequences in directory ```~/data/<YourChallenge>``` following this structure:
+
+```
+.
+|—— <SeqName01>
+	|—— gt
+		|—— gt.txt
+	|—— det
+		|—— det.txt
+	|—— img1
+		|—— 000001.jpg
+		|—— 000002.jpg
+		|—— ….
+|—— <SeqName02>
+	|—— ……
+|—— <SeqName03>
+	|—— …...
+```
+If you have different image sources for the same sequence or do not provide public detections you can adjust the structure accordingly.
+***2. Sequence file***
+Create text files ```<YourChallenge>-train.txt```, ```<YourChallenge>-test.txt```,  ```<YourChallenge>-test.txt``` inside ```~/seqmaps```, e.g.:
+```<YourChallenge>-all.txt```
+```
+name
+<seqName1> 
+<seqName2>
+<seqName3>
+```
+
+```<YourChallenge>-train.txt```
+```
+name
+<seqName1> 
+<seqName2>
+```
+
+```<YourChallenge>-test.txt```
+```
+name
+<seqName3>
+```
+
+To run the evaluation for your method please adjust the file ```MOT/evalMOT.py``` setting ```benchmark_name = <YourChallenge>``` and ```eval_mode```: Mode of evaluation out of ```["train", "test", "all"]``` (default : "train")
+
 ## Citation
 If you work with the code and the benchmark, please cite:
 

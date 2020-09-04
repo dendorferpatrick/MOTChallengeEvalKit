@@ -17,20 +17,19 @@ python ZF3D/evalZF3D.py
 ## Evaluation
 To run the evaluation for your method please adjust the file ```ZF3D/evalZF3D.py``` using the following arguments:
 
-```benchmark_name```: Name of the benchmark. E.g., ZeF-3D  
-```gt_dir```: Directory containing sequence folders with ground truth files located in ```/gt/gt.txt```.   
-```res_dir```: Directory containing the tracking results. Each one should be saved in a separate .txt file with the name of the respective sequence. E.g., ```res_dir/ZebraFish-01.txt```  
-```save_pkl```: Path to output directory for final results (pickle).  
-```seq_file```: File containing list of sequences of benchmark. For the 3D-ZeF challenge this should be ```c16-test.txt```  
+
+```benchmark_name```: Name of the benchmark, e.g. ZeF-3D    
+```gt_dir```: Directory containing ground truth files in ```<gt_dir>/<sequence>/gt/gt.txt```    
+```res_dir```: The folder containing the tracking results. Each one should be saved in a separate .txt file with the name of the respective sequence (see ./res/data)    
+```save_pkl```: path to output directory for final results (pickle)  (default: False)  
+```eval_mode```: Mode of evaluation out of ```["train", "test", "all"]``` (default : "train")
 
 ```
 eval.run(
     benchmark_name = benchmark_name,
-    seq_file = seq_file,
     gt_dir = gt_dir,
     res_dir = res_dir,
-    save_pkl = save_pkl
-        )
+    eval_mode = eval_mode)
 ```
 ## Visualization
 To visualize your results or the annotations run
