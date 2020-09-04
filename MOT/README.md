@@ -28,7 +28,7 @@ To run the evaluation for your method please adjust the file ```MOT/evalMOT.py``
 ```gt_dir```: Directory containing ground truth files in ```gt/gt.txt```    
 ```res_dir```: The folder containing the tracking results. Each one should be saved in a separate .txt file with the name of the respective sequence (see ./res/data)    
 ```save_pkl```: path to output directory for final results (pickle)  
-```seq_file```: File containing list of sequences of benchmark, e.g. 'c10-train.txt'
+```seq_file```: File containing list of sequences of benchmark, e.g. 'MOT17-train.txt'
 
 ```
 eval.run(
