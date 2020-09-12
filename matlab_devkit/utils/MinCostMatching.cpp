@@ -1,7 +1,8 @@
-#include <mex.h>
+#include "mex.h"
 #include <matrix.h>
 #include <vector>
 #include <algorithm>
+#include <cmath>
 using namespace std;
 // Min cost bipartite matching via shortest augmenting paths
 //
