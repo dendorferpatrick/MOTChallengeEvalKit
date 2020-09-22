@@ -27,7 +27,7 @@ This directory is for the visualization of results or annotations
 This repo provides the evaluation scripts for the following challenges of www.motchallenge.net:
 
 ### MOT - Multi-Object Tracking - MOT15, MOT16, MOT17, MOT20
-[MOT Evaluation](MOT/MOT_README.md)
+[MOT Evaluation](MOT/README.md)
 
 Challenge Name | Data url |
 |----- | ----------- |
@@ -37,20 +37,20 @@ Challenge Name | Data url |
 |MOT 20| https://motchallenge.net/data/MOT20/       |
 
 ### DET - Multi-Object Detection - MOT16Det, MOT20Det
-[DET Evaluation](DET/DET_README.md)
+[DET Evaluation](DET/README.md)
 |Challenge Name | Data url |
 |----- | ------------- | 
 |MOT17Det| https://motchallenge.net/data/MOT17Det/ |
 |MOT20Det| https://motchallenge.net/data/MOT20Det/ |
 
 ### MOTS - Multi-Object Tracking and Segmentation - MOTS20
-[MOTS Evaluation](MOTS/MOTS_README.md)
+[MOTS Evaluation](MOTS/README.md)
 |Challenge Name | Data url | 
 |----- | ---------------|
 |MOTS | https://motchallenge.net/data/MOTS/ |
 
 ### 3D-ZeF20 
-[ZF3D Evaluation](ZF3D/ZF3D_README.md)
+[ZF3D Evaluation](ZF3D/README.md)
 |Challenge Name | Data url |
 |----- | ---------------------- |
 |3D-ZeF20 | https://motchallenge.net/data/3D-ZeF20/ |
