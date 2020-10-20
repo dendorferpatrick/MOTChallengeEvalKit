@@ -55,6 +55,12 @@ Challenge Name | Data url |
 |----- | ---------------------- |
 |3D-ZeF20 | https://motchallenge.net/data/3D-ZeF20/ |
 
+### TAO - Tracking Any Object Challenge 
+[TAO Evaluation](https://github.com/TAO-Dataset/tao)
+|Challenge Name | Data url |
+|----- | ---------------------- |
+|TAO | https://github.com/TAO-Dataset/tao |
+
 ## Feedback and contact
 We are constantly working on improving our benchmark to provide the best performance to the community.
 You can help us to make the benchmark better to open issues in the repo and report bugs to the author:
