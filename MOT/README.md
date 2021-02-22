@@ -68,7 +68,7 @@ visualizer.generateVideo(displayTime, displayName, showOccluder, fps  )
 <p>
 The file format should be the same as the ground truth file, 
 which is a CSV text-file containing one object instance per line.
-Each line must contain 10 values:
+Each line must contain 9 values:
 </p>
 
 </p>
@@ -80,23 +80,31 @@ Each line must contain 10 values:
 &lt;bb_width&gt;,
 &lt;bb_height&gt;,
 &lt;conf&gt;,
-&lt;x&gt;,
-&lt;y&gt;,
-&lt;z&gt;
+&lt;class&gt;,
+&lt;visibility&gt;
 </code>
 </p>
 
-The world coordinates <code>x,y,z</code>
-are ignored for the 2D challenge and can be filled with -1.
-Similarly, the bounding boxes are ignored for the 3D challenge.
-However, each line is still required to contain 10 values.
+Bounding box coordiantes and sizes are rounded to the nearest integer. Visibility varies between 0 (object is completely occluded) and 1 (object is completely visible). Only pedestrians are ultimately scored, and predicted bounding boxes that overlap by > 50% with a ground-truth object of a different class are removed so as not to penalize detectors for these false positives. All ground-truth confidence values for pedestrians are 1, and all other class confidences are 0.Classes indices  are as follows:
+- Pedestrian 1
+- Person on vehicle 2
+- Car 3
+- Bicycle 4
+- Motorbike 5
+- Non motorized vehicle 6
+- Static person 7
+- Distractor 8
+- Occluder 9
+- Occluder on the ground 10
+- Occluder full 11
+- Reflection 12
 
 All frame numbers, target IDs and bounding boxes are 1-based. Here is an example:
-
 <pre>
-1, 3, 794.27, 247.59, 71.245, 174.88, -1, -1, -1, -1
-1, 6, 1648.1, 119.61, 66.504, 163.24, -1, -1, -1, -1
-1, 8, 875.49, 399.98, 95.303, 233.93, -1, -1, -1, -1
+1, 3, 794.27, 247.59, 71.245, 174.88, 1, 1, 1
+1, 6, 1648.1, 119.61, 66.504, 163.24, 1, 1, 0.956
+1, 8, 875.49, 399.98, 95.303, 233.93, 1, 1, 0.874
+1, 9, 875.49, 399.98, 95.303, 233.93, 0, 7, 0.743
 ...
 </pre>
 
