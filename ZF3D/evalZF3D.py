@@ -80,7 +80,7 @@ if __name__ == "__main__":
     eval = Zef_3d()
 
     benchmark_name = "3D-ZeF20"
-    gt_dir = "data/3DZeF"
+    gt_dir = "data/3DZeF20"
     res_dir = "res/ZeFres"
     eval_mode = "train"
 
