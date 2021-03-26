@@ -2,6 +2,11 @@
 # Official MOTChallenge Evaluation Kit
 This repository contains the evaluation scripts for all challenges, available at www.MOTChallenge.net.
 This devkit replaces the previous version that used to be accessible over https://bitbucket.org/amilan/motchallenge-devkit and is no longer maintained.
+```diff
+- IMPORTANT!
+- The MOT evaluation code is not any longer maintained. 
+```
+Please visit the [new official python evaluation code](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/Readme.md). 
 
 ## Requirements 
 * Python (3.6.9 or newer)
@@ -27,6 +32,13 @@ This directory is for the visualization of results or annotations
 This repo provides the evaluation scripts for the following challenges of www.motchallenge.net:
 
 ### MOT - Multi-Object Tracking - MOT15, MOT16, MOT17, MOT20
+```diff
+- IMPORTANT!
+- The MOT evaluation code is not any longer maintained. 
+```
+Please visit the [new official python evaluation code](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/Readme.md). 
+
+
 [MOT Evaluation](MOT/README.md)
 
 Challenge Name | Data url |
