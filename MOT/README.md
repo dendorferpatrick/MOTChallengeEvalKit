@@ -156,7 +156,7 @@ To run the evaluation for your method adjust the file ```MOT/evalMOT.py``` and s
 ## Citation
 If you work with the code and the benchmark, please cite:
 
-**MOTCHallenge***
+***MOTChallenge***
 ```
 @article{dendorfer2020motchallenge,
   title={MOTChallenge: A Benchmark for Single-camera Multiple Target Tracking},
