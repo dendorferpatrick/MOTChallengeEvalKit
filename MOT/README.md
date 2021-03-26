@@ -1,5 +1,10 @@
 # MOT - Multi Object Tracking
 ![MOT_PIC](https://motchallenge.net/sequenceVideos/MOT17-04-SDP-gt.jpg)
+```diff
+- IMPORTANT!
+- The MOT evaluation code is not any longer maintained. 
+```
+Please visit the [new official python evaluation code](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/Readme.md). 
 
 
 ## Requirements
