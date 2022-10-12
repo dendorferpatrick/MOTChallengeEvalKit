@@ -200,7 +200,7 @@ If you work with the code and the benchmark, please cite:
 @article{MOTChallenge20,
     title={MOT20: A benchmark for multi object tracking in crowded scenes},
     shorttitle = {MOT20},
-	url = {http://arxiv.org/abs/1906.04567},
+	url = {http://arxiv.org/abs/2003.09003},
 	journal = {arXiv:2003.09003[cs]},
 	author = {Dendorfer, P. and Rezatofighi, H. and Milan, A. and Shi, J. and Cremers, D. and Reid, I. and Roth, S. and Schindler, K. and Leal-Taix\'{e}, L. },
 	month = mar,
